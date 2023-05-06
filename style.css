@@ -1,0 +1,254 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+
+
+}
+
+header {
+	background-image: url('pure.jpg');
+	background-size: cover;
+	color: yellow;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: orange;
+	z-index: 1;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	margin: 0 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #c0c0c0;
+}
+
+.burger {
+	display: none;
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.burger:hover {
+	color: #c0c0c0;
+}
+
+.header-content {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.header-content h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+.header-content p {
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+
+.button {
+	display: inline-block;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 20px;
+	border-radius: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.button:hover {
+	background-color: #c0c0c0;
+	color: #fff;
+}
+
+main {
+	padding: 50px;
+background-image: url(HR.jpg);
+}
+
+section {
+	margin-bottom: 50px;
+	color: orangered;
+	text-decoration: !important;
+}
+
+section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.flavors-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+	background-color: purple;
+}
+
+.flavor {
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+
+}
+
+.flavor img {
+	width: 100px;
+	margin-bottom: 20px;
+
+}
+
+section form {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: auto;
+	background-color: purple;
+}
+
+label {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+input,
+textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+button[type="submit"] {
+	background-color: skyblue;
+	color: darkgreen;
+	padding: 10px 20px;
+	border-radius: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	align-self: flex-end;
+}
+
+button[type="submit"]:hover {
+	background-color: #c0c0c0;
+	color: #fff;
+}
+
+footer {
+	background-color: orangered;
+	padding: 20px;
+	text-align: center;
+	color: red;
+}
+
+@media (max-width: 768px) {
+	header {
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 
+}
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+}
+
+.about-content {
+	flex-basis: 60%;
+	margin-right: 50px;
+}
+
+.about-content h2 {
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+}
+
+.about-content p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+
+.about-image {
+	flex-basis: 30%;
+}
+
+.about-image img {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+#contact-info {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#contact-info {
+  background-color: yellow;
+  background-image: url(HR.jpg);
+  padding: 20px;
+}
+
+#contact-info h2 {
+  margin-bottom: 10px;
+}
+
+#contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact-info li {
+  margin-bottom: 5px;
+  background-color: deepskyblue;
+}
+
+#contact-info li:before {
+  content: "\2022";  /* Use a bullet character as the list item marker */
+  color: ORANGE;  /* Change the color of the marker */
+  font-size: 14px;
+  margin-right: 10px;
+  background-color: blueviolet;
+}
